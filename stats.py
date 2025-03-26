@@ -17,7 +17,6 @@ def get_ch_count(text):
     return counts  
 
 def sort_char_count(counts):
-    # Only include alphabetic characters in the list
     sorted_list = [{"char": char, "count": count} for char, count in counts.items() if char.isalpha()]
     sorted_list.sort(key=lambda x: x["count"], reverse=True)
     return sorted_list
